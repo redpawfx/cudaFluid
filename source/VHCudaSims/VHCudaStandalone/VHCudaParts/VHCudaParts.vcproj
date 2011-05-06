@@ -49,6 +49,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
+				AdditionalIncludeDirectories="&quot;C:\ProgramData\NVIDIA Corporation\NVIDIA GPU Computing SDK 3.2\C\common\inc&quot;"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
@@ -197,6 +198,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				EnableIntrinsicFunctions="true"
+				AdditionalIncludeDirectories="&quot;$(CUDA_INC_PATH)&quot;;&quot;$(NVSDKCOMPUTE_ROOT)/C/common/inc&quot;;D:\dev\cudaFluid\source\VHCudaSims\extraGL\include"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
 				WarningLevel="3"
@@ -213,6 +215,8 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				AdditionalDependencies="glaux.lib cudart.lib glu32.lib cutil.lib glew.lib glut.lib"
+				AdditionalLibraryDirectories="D:\dev\cudaFluid\source\VHCudaSims\extraGL\lib"
 				GenerateDebugInformation="true"
 				OptimizeReferences="2"
 				EnableCOMDATFolding="2"
@@ -268,7 +272,7 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
-				AdditionalIncludeDirectories="$(CUDA_INC_PATH);$(NVSDKCOMPUTE_ROOT)/C/common/inc"
+				AdditionalIncludeDirectories="&quot;$(CUDA_INC_PATH)&quot;;&quot;$(NVSDKCOMPUTE_ROOT)/C/common/inc&quot;;D:\dev\cudaFluid\source\VHCudaSims\VHCudaStandalone\VHCudaParts"
 			/>
 			<Tool
 				Name="VCManagedResourceCompilerTool"
@@ -281,8 +285,8 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="glaux.lib cudart.lib glu32.lib cutil64.lib  glew64.lib glut64.lib"
-				AdditionalLibraryDirectories="$(CUDA_LIB_PATH);$(NVSDKCOMPUTE_ROOT)/C/common/lib"
+				AdditionalDependencies="GLAux.lib cudart.lib glu32.lib cutil64.lib glew64.lib glut64.lib"
+				AdditionalLibraryDirectories="&quot;$(CUDA_LIB_PATH)&quot;;&quot;$(NVSDKCOMPUTE_ROOT)/C/common/lib&quot;;D:\dev\cudaFluid\source\VHCudaSims\VHCudaStandalone\VHCudaParts"
 			/>
 			<Tool
 				Name="VCALinkTool"

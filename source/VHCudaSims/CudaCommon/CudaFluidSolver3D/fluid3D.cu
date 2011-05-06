@@ -983,7 +983,7 @@ static void checkCUDAError(const char *msg) {
 
 void computeGridSize(cudaExtent res, dim3 &blocks, dim3 &threads, int &bx){
 
-	int nThreads = 8;
+	int nThreads = 4;
 
 	threads.x = nThreads;
 	threads.y = nThreads;

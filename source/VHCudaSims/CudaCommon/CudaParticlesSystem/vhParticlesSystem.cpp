@@ -2,7 +2,7 @@
 
 #include <GL/glut.h>
 #include <GL/glext.h>
-#include <GL/GLaux.h>
+#include <GL/GLAux.h>
 
 #include "vhParticlesSystem.h"
 
