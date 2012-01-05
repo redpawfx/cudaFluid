@@ -1,0 +1,18 @@
+Short Linux build instructions with Code Blocks :
+
+Install Cuda 4 toolkit as follow :
+http://sublimated.wordpress.com/2011/03/25/installing-cuda-4-0-rc-on-ubuntu-10-10-64-bit/
+(devdriver is not needed if you have a recent nvidia driver for your card)
+
+Setup nvcc in Code Blocks as follow :
+http://benbarsdell.blogspot.com/2009/03/cuda-in-codeblocks-first-things-second.html
+
+Now to build a plugin for Houdini or Maya, use NVCC as the compiler in Code Blocks, and you have to pass the GCC options with
+--compiler-options "gcc_compiler_options"
+
+since nvcc will forward the compilation of .cpp to GCC
+the GCC compiler options can be found by looking at the example makefiles in the HDK or the Maya DevKit.
+
+I had a problem using GLEW from the Nvidia GPU SDK which is not compiled with -fPIC, but it works fine using GLEW installed with apt-get
+
+I built the maya plugin with GCC 4.4 instead of 4.1.2 as specified in the maya docs and it seems to work.

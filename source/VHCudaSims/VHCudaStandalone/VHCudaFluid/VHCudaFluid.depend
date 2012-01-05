@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1311279874 source:/home/vinz/CodeBlocks/VHCudaSims/CudaCommon/CudaFluidSolver2D/vhFluidSolver.cpp
+	<GL/glew.h>
+	<GL/glut.h>
+	<GL/glext.h>
+	"vhFluidSolver.h"
+
+1311279874 /home/vinz/CodeBlocks/VHCudaSims/CudaCommon/CudaFluidSolver2D/vhFluidSolver.h
+	"vhObjects.h"
+	<stdio.h>
+	<cuda_runtime_api.h>
+	<cuda_gl_interop.h>
+	<vector_functions.h>
+	<driver_functions.h>
+	<channel_descriptor.h>
+	<cutil.h>
+	<cutil_inline_runtime.h>
+
+1299196520 /home/vinz/CodeBlocks/VHCudaSims/CudaCommon/CudaFluidSolver2D/vhObjects.h
+
+1303946296 source:/home/vinz/CodeBlocks/VHCudaSims/VHCudaStandalone/VHCudaFluid/main.cpp
+	<stdio.h>
+	<GL/glew.h>
+	"GL/glut.h"
+	<cuda_runtime_api.h>
+	<cuda_gl_interop.h>
+	<cutil.h>
+	<cutil_inline_runtime.h>
+	"../../CudaCommon/CudaFluidSolver2D/vhFluidSolver.h"
+
+1285662284 /home/vinz/CodeBlocks/VHCudaSims/VHCudaStandalone/VHCudaFluid/GL/glut.h
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1303938458 source:/home/vinz/CodeBlocks/VHCudaSims/CudaCommon/CudaFluidSolver2D/fluid2D.cu
+	<stdio.h>
+	<cuda.h>
+	<cutil_math.h>
+	"perlinKernel.cu"
+	"vhObjects.h"
+
+1297435226 /home/vinz/CodeBlocks/VHCudaSims/CudaCommon/CudaFluidSolver2D/perlinKernel.cu
+	<cutil_math.h>
+	<cutil_inline.h>
+

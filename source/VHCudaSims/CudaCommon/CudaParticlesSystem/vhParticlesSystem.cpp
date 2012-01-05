@@ -2,7 +2,6 @@
 
 #include <GL/glut.h>
 #include <GL/glext.h>
-#include <GL/GLAux.h>
 
 #include "vhParticlesSystem.h"
 
@@ -157,7 +156,7 @@ void VHParticlesSystem::freeParticlesSystem(){
 
 	if(nParts == -1)
 		return;
-	
+
 	delete host_pos;
 
 	cu::cudaFree((void**)&dev_pos);
@@ -241,7 +240,7 @@ void VHParticlesSystem::emitParticles(){
 			index++;
 			if(index>nParts) {
 				index = 0;
-				
+
 			}
 		}
 
@@ -343,13 +342,13 @@ void VHParticlesSystem::draw(){
 	cu::float3 *dPosPtr;
 
 	cu::cutilSafeCall(cu::cudaGraphicsMapResources(1, &posVboRes, 0));
-	size_t num_bytes_pos; 
+	size_t num_bytes_pos;
 	cu::cutilSafeCall(cu::cudaGraphicsResourceGetMappedPointer((void **)&dPosPtr, &num_bytes_pos, posVboRes));
 
 	cu::float4 *dColourPtr;
 
 	cu::cutilSafeCall(cu::cudaGraphicsMapResources(1, &colourVboRes, 0));
-	size_t num_bytes_col; 
+	size_t num_bytes_col;
 	cu::cutilSafeCall(cu::cudaGraphicsResourceGetMappedPointer((void **)&dColourPtr, &num_bytes_col, colourVboRes));
 
 

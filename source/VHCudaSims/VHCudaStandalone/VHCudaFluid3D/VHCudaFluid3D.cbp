@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="VHCudaFluid3D" />
+		<Option pch_mode="2" />
+		<Option compiler="nvcc_cuda" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/VHCudaFluid3D" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="nvcc_cuda" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/VHCudaFluid3D" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="nvcc_cuda" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Linker>
+			<Add library="GLEW_x86_64" />
+			<Add library="glut" />
+			<Add library="cutil_x86_64" />
+			<Add library="GLU" />
+		</Linker>
+		<Unit filename="../../CudaCommon/CudaFluidSolver3D/cudaWrapper.h" />
+		<Unit filename="../../CudaCommon/CudaFluidSolver3D/fluid3D.cu">
+			<Option compile="1" />
+			<Option link="1" />
+		</Unit>
+		<Unit filename="../../CudaCommon/CudaFluidSolver3D/perlinKernel3d.cu" />
+		<Unit filename="../../CudaCommon/CudaFluidSolver3D/vhFluidObjects3D.h" />
+		<Unit filename="../../CudaCommon/CudaFluidSolver3D/vhFluidSolver3D.cpp" />
+		<Unit filename="../../CudaCommon/CudaFluidSolver3D/vhFluidSolver3D.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

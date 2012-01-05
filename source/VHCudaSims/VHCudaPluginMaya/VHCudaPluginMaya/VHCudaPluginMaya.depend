@@ -1,0 +1,495 @@
+# depslib dependency file v1.0
+1311279874 source:/home/vinz/CodeBlocks/VHCudaSims/CudaCommon/CudaFluidSolver2D/vhFluidSolver.cpp
+	<GL/glew.h>
+	<GL/glut.h>
+	<GL/glext.h>
+	"vhFluidSolver.h"
+
+1311279874 /home/vinz/CodeBlocks/VHCudaSims/CudaCommon/CudaFluidSolver2D/vhFluidSolver.h
+	"vhObjects.h"
+	<stdio.h>
+	<cuda_runtime_api.h>
+	<cuda_gl_interop.h>
+	<vector_functions.h>
+	<driver_functions.h>
+	<channel_descriptor.h>
+	<cutil.h>
+	<cutil_inline_runtime.h>
+
+1299196520 /home/vinz/CodeBlocks/VHCudaSims/CudaCommon/CudaFluidSolver2D/vhObjects.h
+
+1303591108 source:/home/vinz/CodeBlocks/VHCudaSims/CudaCommon/CudaFluidSolver3D/vhFluidSolver3D.cpp
+	<GL/glew.h>
+	<GL/glut.h>
+	<GL/glext.h>
+	"vhFluidSolver3D.h"
+
+1303596324 /home/vinz/CodeBlocks/VHCudaSims/CudaCommon/CudaFluidSolver3D/vhFluidSolver3D.h
+	"vhFluidObjects3D.h"
+	<stdio.h>
+	<cuda_runtime_api.h>
+	<cuda_gl_interop.h>
+	<vector_functions.h>
+	<driver_functions.h>
+	<channel_descriptor.h>
+	<cutil.h>
+	<cutil_inline_runtime.h>
+
+1303159140 /home/vinz/CodeBlocks/VHCudaSims/CudaCommon/CudaFluidSolver3D/vhFluidObjects3D.h
+
+1311281109 source:/home/vinz/CodeBlocks/VHCudaSims/CudaCommon/CudaParticlesSystem/vhParticlesSystem.cpp
+	<GL/glew.h>
+	<GL/glut.h>
+	<GL/glext.h>
+	"vhParticlesSystem.h"
+	<time.h>
+
+1303847864 /home/vinz/CodeBlocks/VHCudaSims/CudaCommon/CudaParticlesSystem/vhParticlesSystem.h
+	"vhParticlesObjects3D.h"
+	<stdlib.h>
+	<stdio.h>
+	<cmath>
+	<cuda_runtime_api.h>
+	<cuda_gl_interop.h>
+	<vector_functions.h>
+	<cutil.h>
+	<cutil_inline_runtime.h>
+	"../CudaFluidSolver3D/vhFluidSolver3D.h"
+
+1303423550 /home/vinz/CodeBlocks/VHCudaSims/CudaCommon/CudaParticlesSystem/vhParticlesObjects3D.h
+
+1303938458 source:/home/vinz/CodeBlocks/VHCudaSims/CudaCommon/CudaFluidSolver2D/fluid2D.cu
+	<stdio.h>
+	<cuda.h>
+	<cutil_math.h>
+	"perlinKernel.cu"
+	"vhObjects.h"
+
+1297435226 /home/vinz/CodeBlocks/VHCudaSims/CudaCommon/CudaFluidSolver2D/perlinKernel.cu
+	<cutil_math.h>
+	<cutil_inline.h>
+
+1303934602 source:/home/vinz/CodeBlocks/VHCudaSims/CudaCommon/CudaFluidSolver3D/fluid3D.cu
+	<stdio.h>
+	<cutil_math.h>
+	"perlinKernel3d.cu"
+
+1297534918 /home/vinz/CodeBlocks/VHCudaSims/CudaCommon/CudaFluidSolver3D/perlinKernel3d.cu
+	<cutil_math.h>
+	<cutil_inline.h>
+
+1303847848 source:/home/vinz/CodeBlocks/VHCudaSims/CudaCommon/CudaParticlesSystem/vhParticlesKernels.cu
+	<cutil_math.h>
+	"perlinKernelParts.cu"
+
+1302730704 /home/vinz/CodeBlocks/VHCudaSims/CudaCommon/CudaParticlesSystem/perlinKernelParts.cu
+	<cutil_math.h>
+	<cutil_inline.h>
+
+1304109312 source:/home/vinz/CodeBlocks/VHCudaSims/VHCudaPluginMaya/VHCudaPluginMaya/fluidNode2D.cpp
+	"fluidNode2D.h"
+
+1304105540 /home/vinz/CodeBlocks/VHCudaSims/VHCudaPluginMaya/VHCudaPluginMaya/fluidNode2D.h
+	<GL/glew.h>
+	<maya/MPxLocatorNode.h>
+	<maya/MMatrix.h>
+	<maya/MPxNode.h>
+	<maya/MIOStream.h>
+	<maya/MFnNumericAttribute.h>
+	<maya/MFnTypedAttribute.h>
+	<maya/MFnUnitAttribute.h>
+	<maya/MFnEnumAttribute.h>
+	<maya/MArrayDataBuilder.h>
+	<maya/MFnMessageAttribute.h>
+	<maya/MPlugArray.h>
+	<maya/MFnTransform.h>
+	<maya/MTime.h>
+	<maya/MVector.h>
+	<maya/MFloatVector.h>
+	<maya/MFnDoubleArrayData.h>
+	<maya/MDoubleArray.h>
+	<maya/M3dView.h>
+	<maya/MGlobal.h>
+	<maya/MSelectionList.h>
+	<maya/MFnFluid.h>
+	<maya/MDagPath.h>
+	<maya/MFnDagNode.h>
+	<maya/MImage.h>
+	<string>
+	<math.h>
+	"../../CudaCommon/CudaFluidSolver2D/vhFluidSolver.h"
+	<cuda_runtime_api.h>
+	<cuda_gl_interop.h>
+	<cutil.h>
+	<cutil_inline_runtime.h>
+
+1299840754 /usr/autodesk/maya2012-x64/include/maya/MPxLocatorNode.h
+	<maya/MStatus.h>
+	<maya/MTypes.h>
+	<maya/MObject.h>
+	<maya/MPxNode.h>
+	<maya/M3dView.h>
+	<maya/MBoundingBox.h>
+	<maya/M3dView.h>
+
+1299840757 /usr/autodesk/maya2012-x64/include/maya/MStatus.h
+	<maya/MTypes.h>
+	<maya/MIOStream.h>
+	<maya/MIOStreamFwd.h>
+
+1299840765 /usr/autodesk/maya2012-x64/include/maya/MTypes.h
+	<winsock2.h>
+	"windows.h"
+	<sys/types.h>
+	<sys/stat.h>
+	<basetsd.h>
+	<inttypes.h>
+	<stdarg.h>
+
+1299840761 /usr/autodesk/maya2012-x64/include/maya/MIOStream.h
+	<maya/MIOStreamFwd.h>
+	<iostream>
+	<iostream.h>
+
+1299840756 /usr/autodesk/maya2012-x64/include/maya/MIOStreamFwd.h
+	<iosfwd>
+
+1299840757 /usr/autodesk/maya2012-x64/include/maya/MObject.h
+	<maya/MFn.h>
+	<maya/MTypes.h>
+	<stdio.h>
+
+1299840773 /usr/autodesk/maya2012-x64/include/maya/MFn.h
+
+1299840772 /usr/autodesk/maya2012-x64/include/maya/MPxNode.h
+	<maya/MStatus.h>
+	<maya/MTypes.h>
+	<maya/MObject.h>
+	<maya/MTypeId.h>
+	<maya/MDataHandle.h>
+	<maya/MDataBlock.h>
+	<maya/MPlug.h>
+	<maya/MString.h>
+	<maya/MDGContext.h>
+
+1299840763 /usr/autodesk/maya2012-x64/include/maya/MTypeId.h
+	<maya/MTypes.h>
+	<maya/MStatus.h>
+
+1299840755 /usr/autodesk/maya2012-x64/include/maya/MDataHandle.h
+	<maya/MStatus.h>
+	<maya/MTypes.h>
+	<string.h>
+	<maya/MFnNumericData.h>
+	<maya/MFnData.h>
+	<maya/MTypeId.h>
+	<maya/MObject.h>
+
+1299840769 /usr/autodesk/maya2012-x64/include/maya/MFnNumericData.h
+	<maya/MFnData.h>
+
+1299840769 /usr/autodesk/maya2012-x64/include/maya/MFnData.h
+	<maya/MFnBase.h>
+
+1299840770 /usr/autodesk/maya2012-x64/include/maya/MFnBase.h
+	<maya/MFn.h>
+	<maya/MStatus.h>
+	<maya/MTypes.h>
+
+1299840772 /usr/autodesk/maya2012-x64/include/maya/MDataBlock.h
+	<maya/MStatus.h>
+	<maya/MTypes.h>
+	<maya/MDataHandle.h>
+	<maya/MArrayDataHandle.h>
+
+1299840764 /usr/autodesk/maya2012-x64/include/maya/MArrayDataHandle.h
+	<maya/MStatus.h>
+	<maya/MTypes.h>
+	<string.h>
+	<maya/MDataHandle.h>
+	<maya/MArrayDataBuilder.h>
+
+1299840770 /usr/autodesk/maya2012-x64/include/maya/MArrayDataBuilder.h
+	<maya/MStatus.h>
+	<maya/MTypes.h>
+	<maya/MDataHandle.h>
+	<maya/MArrayDataHandle.h>
+
+1299840766 /usr/autodesk/maya2012-x64/include/maya/MPlug.h
+	<maya/MStatus.h>
+	<maya/MTypes.h>
+	<maya/MDGContext.h>
+	<maya/MObject.h>
+	<maya/MIntArray.h>
+
+1299840765 /usr/autodesk/maya2012-x64/include/maya/MDGContext.h
+	<maya/MStatus.h>
+	<maya/MTypes.h>
+
+1299840757 /usr/autodesk/maya2012-x64/include/maya/MIntArray.h
+	<maya/MTypes.h>
+	<maya/MStatus.h>
+
+1299840766 /usr/autodesk/maya2012-x64/include/maya/MString.h
+	<maya/MTypes.h>
+	<maya/MStatus.h>
+
+1299840759 /usr/autodesk/maya2012-x64/include/maya/M3dView.h
+	<maya/MStatus.h>
+	<maya/MObject.h>
+	<maya/MColor.h>
+	<maya/MNativeWindowHdl.h>
+	<OpenGL/gl.h>
+	<AGL/agl.h>
+	<agl.h>
+	<GL/glx.h>
+	<X11/Intrinsic.h>
+	"winsock2.h"
+	"windows.h"
+	<gl/Gl.h>
+
+1299840763 /usr/autodesk/maya2012-x64/include/maya/MColor.h
+	<maya/MTypes.h>
+	<maya/MIOStreamFwd.h>
+
+1299840771 /usr/autodesk/maya2012-x64/include/maya/MNativeWindowHdl.h
+	<maya/MTypes.h>
+	<X11/Intrinsic.h>
+	"winsock2.h"
+	"windows.h"
+	<Carbon/Carbon.h>
+
+1299840757 /usr/autodesk/maya2012-x64/include/maya/MBoundingBox.h
+	<maya/MTypes.h>
+	<maya/MPoint.h>
+
+1299840758 /usr/autodesk/maya2012-x64/include/maya/MPoint.h
+	<maya/MTypes.h>
+	<maya/MStatus.h>
+	<maya/MVector.h>
+
+1299840769 /usr/autodesk/maya2012-x64/include/maya/MVector.h
+	<maya/MTypes.h>
+	<maya/MTransformationMatrix.h>
+	<math.h>
+
+1299840757 /usr/autodesk/maya2012-x64/include/maya/MTransformationMatrix.h
+	<maya/MStatus.h>
+	<maya/MTypes.h>
+
+1299840769 /usr/autodesk/maya2012-x64/include/maya/MMatrix.h
+	<maya/MStatus.h>
+	<maya/MTypes.h>
+
+1299840760 /usr/autodesk/maya2012-x64/include/maya/MFnNumericAttribute.h
+	<maya/MFnAttribute.h>
+	<maya/MFnNumericData.h>
+	<maya/MObject.h>
+
+1299840761 /usr/autodesk/maya2012-x64/include/maya/MFnAttribute.h
+	<maya/MFnBase.h>
+	<maya/MFnData.h>
+
+1299840770 /usr/autodesk/maya2012-x64/include/maya/MFnTypedAttribute.h
+	<maya/MFnAttribute.h>
+	<maya/MFnData.h>
+	<maya/MObject.h>
+
+1299840760 /usr/autodesk/maya2012-x64/include/maya/MFnUnitAttribute.h
+	<maya/MFnAttribute.h>
+
+1299840756 /usr/autodesk/maya2012-x64/include/maya/MFnEnumAttribute.h
+	<maya/MFnAttribute.h>
+
+1299840763 /usr/autodesk/maya2012-x64/include/maya/MFnMessageAttribute.h
+	<maya/MFnAttribute.h>
+
+1299840758 /usr/autodesk/maya2012-x64/include/maya/MPlugArray.h
+	<maya/MTypes.h>
+	<maya/MStatus.h>
+
+1299840759 /usr/autodesk/maya2012-x64/include/maya/MFnTransform.h
+	<maya/MFnDagNode.h>
+	<maya/MTransformationMatrix.h>
+	<maya/MObject.h>
+
+1299840757 /usr/autodesk/maya2012-x64/include/maya/MFnDagNode.h
+	<maya/MFnDependencyNode.h>
+	<maya/MObject.h>
+	<stdlib.h>
+
+1299840759 /usr/autodesk/maya2012-x64/include/maya/MFnDependencyNode.h
+	<maya/MFnBase.h>
+	<maya/MTypeId.h>
+	<maya/MString.h>
+
+1299840765 /usr/autodesk/maya2012-x64/include/maya/MTime.h
+	<maya/MTypes.h>
+	<maya/MStatus.h>
+
+1299840755 /usr/autodesk/maya2012-x64/include/maya/MFloatVector.h
+	<maya/MTypes.h>
+	<maya/MStatus.h>
+	<math.h>
+
+1299840769 /usr/autodesk/maya2012-x64/include/maya/MFnDoubleArrayData.h
+	<maya/MFnData.h>
+
+1299840760 /usr/autodesk/maya2012-x64/include/maya/MDoubleArray.h
+	<maya/MTypes.h>
+	<maya/MStatus.h>
+
+1299840763 /usr/autodesk/maya2012-x64/include/maya/MGlobal.h
+	<maya/MIntArray.h>
+	<maya/MDoubleArray.h>
+	<maya/MString.h>
+	<maya/MStringArray.h>
+	<maya/MObject.h>
+	<maya/MStatus.h>
+	<maya/MSelectionMask.h>
+	<maya/MTransformationMatrix.h>
+
+1299840766 /usr/autodesk/maya2012-x64/include/maya/MStringArray.h
+	<maya/MTypes.h>
+	<maya/MStatus.h>
+
+1299840770 /usr/autodesk/maya2012-x64/include/maya/MSelectionMask.h
+	<maya/MObject.h>
+	<maya/MStatus.h>
+
+1299840753 /usr/autodesk/maya2012-x64/include/maya/MSelectionList.h
+	<maya/MStatus.h>
+	<maya/MObject.h>
+
+1299840763 /usr/autodesk/maya2012-x64/include/maya/MFnFluid.h
+	<maya/MFnDagNode.h>
+	<maya/MTypes.h>
+
+1299840773 /usr/autodesk/maya2012-x64/include/maya/MDagPath.h
+	<maya/MStatus.h>
+	<maya/MTypes.h>
+	<maya/MStatus.h>
+	<maya/MObject.h>
+
+1299840754 /usr/autodesk/maya2012-x64/include/maya/MImage.h
+	<maya/MObject.h>
+	<maya/MString.h>
+	<maya/MTypes.h>
+
+1304454606 source:/home/vinz/CodeBlocks/VHCudaSims/VHCudaPluginMaya/VHCudaPluginMaya/fluidNode3D.cpp
+	"fluidNode3D.h"
+
+1304454176 /home/vinz/CodeBlocks/VHCudaSims/VHCudaPluginMaya/VHCudaPluginMaya/fluidNode3D.h
+	<GL/glew.h>
+	<maya/MPxLocatorNode.h>
+	<maya/MMatrix.h>
+	<maya/MPxNode.h>
+	<maya/MIOStream.h>
+	<maya/MFnNumericAttribute.h>
+	<maya/MFnTypedAttribute.h>
+	<maya/MFnUnitAttribute.h>
+	<maya/MFnEnumAttribute.h>
+	<maya/MArrayDataBuilder.h>
+	<maya/MFnMessageAttribute.h>
+	<maya/MPlugArray.h>
+	<maya/MFnTransform.h>
+	<maya/MTime.h>
+	<maya/MVector.h>
+	<maya/MFloatVector.h>
+	<maya/MFnDoubleArrayData.h>
+	<maya/MDoubleArray.h>
+	<maya/MAngle.h>
+	<maya/MEulerRotation.h>
+	<maya/MGlobal.h>
+	<maya/MSelectionList.h>
+	<maya/MFnFluid.h>
+	<maya/MDagPath.h>
+	<maya/MFnDagNode.h>
+	<string>
+	<math.h>
+	"../../CudaCommon/CudaFluidSolver3D/vhFluidSolver3D.h"
+	<cuda_runtime_api.h>
+	<driver_functions.h>
+	<cuda_gl_interop.h>
+	<cutil.h>
+	<cutil_inline_runtime.h>
+
+1299840767 /usr/autodesk/maya2012-x64/include/maya/MAngle.h
+	<maya/MTypes.h>
+	<maya/MStatus.h>
+
+1299840767 /usr/autodesk/maya2012-x64/include/maya/MEulerRotation.h
+	<maya/MTypes.h>
+	<maya/MTransformationMatrix.h>
+	<maya/MIOStreamFwd.h>
+
+1304370116 source:/home/vinz/CodeBlocks/VHCudaSims/VHCudaPluginMaya/VHCudaPluginMaya/initGLCuda.cpp
+	"initGLCuda.h"
+
+1304368732 /home/vinz/CodeBlocks/VHCudaSims/VHCudaPluginMaya/VHCudaPluginMaya/initGLCuda.h
+	<GL/glew.h>
+	<maya/MPxNode.h>
+	<cuda_runtime_api.h>
+	<cuda_gl_interop.h>
+	<cutil.h>
+	<cutil_inline_runtime.h>
+
+1304461088 source:/home/vinz/CodeBlocks/VHCudaSims/VHCudaPluginMaya/VHCudaPluginMaya/particlesNode.cpp
+	"particlesNode.h"
+
+1304460270 /home/vinz/CodeBlocks/VHCudaSims/VHCudaPluginMaya/VHCudaPluginMaya/particlesNode.h
+	<GL/glew.h>
+	<maya/MPxLocatorNode.h>
+	<maya/MMatrix.h>
+	<maya/MPxNode.h>
+	<maya/MIOStream.h>
+	<maya/MFnNumericAttribute.h>
+	<maya/MFnTypedAttribute.h>
+	<maya/MFnUnitAttribute.h>
+	<maya/MFnEnumAttribute.h>
+	<maya/MArrayDataBuilder.h>
+	<maya/MFnMessageAttribute.h>
+	<maya/MPlugArray.h>
+	<maya/MFnTransform.h>
+	<maya/MTime.h>
+	<maya/MVector.h>
+	<maya/MFloatVector.h>
+	<maya/MFnDoubleArrayData.h>
+	<maya/MDoubleArray.h>
+	<maya/MAngle.h>
+	<maya/MEulerRotation.h>
+	<maya/MGlobal.h>
+	<maya/MSelectionList.h>
+	<maya/MFnFluid.h>
+	<maya/MDagPath.h>
+	<maya/MFnDagNode.h>
+	<string>
+	<math.h>
+	"../../CudaCommon/CudaParticlesSystem/vhParticlesSystem.h"
+	<cuda_runtime_api.h>
+	<driver_functions.h>
+	<cuda_gl_interop.h>
+	<cutil.h>
+	<cutil_inline_runtime.h>
+
+1304371848 source:/home/vinz/CodeBlocks/VHCudaSims/VHCudaPluginMaya/VHCudaPluginMaya/pluginMain.cpp
+	<maya/MFnPlugin.h>
+	"fluidNode2D.h"
+	"fluidNode3D.h"
+	"particlesNode.h"
+	"initGLCuda.h"
+
+1299840755 /usr/autodesk/maya2012-x64/include/maya/MFnPlugin.h
+	<maya/MFnBase.h>
+	<maya/MApiVersion.h>
+	<maya/MPxNode.h>
+	<maya/MPxData.h>
+	<maya/MTypes.h>
+
+1299840773 /usr/autodesk/maya2012-x64/include/maya/MApiVersion.h
+
+1299840762 /usr/autodesk/maya2012-x64/include/maya/MPxData.h
+	<maya/MStatus.h>
+	<maya/MTypes.h>
+	<maya/MIOStreamFwd.h>
+
